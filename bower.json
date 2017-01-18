@@ -1,0 +1,21 @@
+{
+    "name": "loadme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zx1988826/loadme.git"
+    },
+    "description": "loading mobile ui",
+    "main": "dist/style/loadme.css",
+    "version": "1.0.0",
+    "authors": [
+        "wushain"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "loadme",
+        "mobile",
+        "ui"
+    ],
+    "homepage": "https://github.com/zx1988826/loadme",
+    "ignore": []
+}
