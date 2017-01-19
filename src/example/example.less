@@ -1,448 +1,426 @@
-/* reset */
+/* example */
 
-html, body {
-    height: 100%;
-    -webkit-tap-highlight-color: transparent;
-
+html {
+    text-size-adjust: 100%;
 }
 
-body{
-    font-family: -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
+.no-margin {
+    margin: 0 !important;
 }
 
-ul{
-    list-style: none;
+.no-padding {
+    padding: 0 !important;
 }
 
-body, .page {
-    background-color: #F8F8F8;
+.m-t-sm {
+    margin-top: 5px !important;
 }
 
-
-/* lib */
-
-.link{
-    color: #1AAD19;
+.m-t {
+    margin-top: 10px !important;
 }
 
+.m-t-md {
+    margin-top: 15px !important;
+}
 
-/* layout */
+.m-t-lg {
+    margin-top: 20px !important;
+}
+
+.m-b-sm {
+    margin-bottom: 5px !important;
+}
+
+.m-b {
+    margin-bottom: 10px !important;
+}
+
+.m-b-md {
+    margin-bottom: 15px !important;
+}
+
+.m-b-lg {
+    margin-bottom: 20px !important;
+}
+
+.m-r-sm {
+    margin-right: 5px !important;
+}
+
+.m-r {
+    margin-right: 10px !important;
+}
+
+.m-r-md {
+    margin-right: 15px !important;
+}
+
+.m-r-lg {
+    margin-right: 20px !important;
+}
+
+.m-l-sm {
+    margin-left: 5px !important;
+}
+
+.m-l {
+    margin-left: 10px !important;
+}
+
+.m-l-md {
+    margin-left: 15px !important;
+}
+
+.m-l-lg {
+    margin-left: 20px !important;
+}
+
+.margin-5 {
+    margin: 5px !important;
+}
+
+.margin-10 {
+    margin: 10px !important;
+}
+
+.margin-15 {
+    margin: 15px !important;
+}
+
+.margin-20 {
+    margin: 20px !important;
+}
+
+.padding-5 {
+    padding: 5px !important;
+}
+
+.padding-10 {
+    padding: 10px !important;
+}
+
+.padding-15 {
+    padding: 15px !important;
+}
+
+.padding-20 {
+    padding: 20px !important;
+}
+
+.p-t-sm {
+    padding-top: 5px !important;
+}
+
+.p-t {
+    padding-top: 10px !important;
+}
+
+.p-t-md {
+    padding-top: 15px !important;
+}
+
+.p-t-lg {
+    padding-top: 20px !important;
+}
+
+.p-b-sm {
+    padding-bottom: 5px !important;
+}
+
+.p-b {
+    padding-bottom: 10px !important;
+}
+
+.p-b-md {
+    padding-bottom: 15px !important;
+}
+
+.p-b-lg {
+    padding-bottom: 20px !important;
+}
+
+.p-r-sm {
+    padding-right: 5px !important;
+}
+
+.p-r {
+    padding-right: 10px !important;
+}
+
+.p-r-md {
+    padding-right: 15px !important;
+}
+
+.p-r-lg {
+    padding-right: 20px !important;
+}
+
+.p-l-sm {
+    padding-left: 5px !important;
+}
+
+.p-l {
+    padding-left: 10px !important;
+}
+
+.p-l-md {
+    padding-left: 15px !important;
+}
+
+.p-l-lg {
+    padding-left: 20px !important;
+}
+
+.line-hr {
+    height: 1px;
+    background-color: #F5F5F5;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.b-r,
+.b-all {
+    border-right: 1px solid #F5F5F5 !important;
+}
+
+.b-l,
+.b-all {
+    border-left: 1px solid #F5F5F5 !important;
+}
+
+.b-t,
+.b-all {
+    border-top: 1px solid #F5F5F5 !important;
+}
+
+.b-b,
+.b-all {
+    border-bottom: 1px solid #F5F5F5 !important;
+}
+
+.font-5 {
+    font-size: 0.5rem !important;
+}
+
+.font-8 {
+    font-size: 0.8rem !important;
+}
+
+.font-10 {
+    font-size: 1rem !important;
+}
+
+.font-12 {
+    font-size: 1.2rem !important;
+}
+
+.font-15 {
+    font-size: 1.5rem !important;
+}
 
 .container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    width: 100%;
+    display: block;
     overflow: hidden;
-}
-
-.page {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    opacity: 0;
-    z-index: 1; // fix 滑动几次后可滚动区域会卡住的问题
-    &.js_show{
-        opacity: 1;
-    }
-}
-
-.page__hd {
-    padding: 40px;
-}
-
-.page__bd {}
-
-.page__bd_spacing {
-    padding: 0 15px;
-}
-
-.page__ft{
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
     text-align: center;
-    img{
-        height: 19px;
-    }
-    &.j_bottom{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+    margin-top: 10px;
+    .b-all
 }
 
-.page__title {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
+.row:first-child {
+    margin-top: 0px;
 }
 
-.page__desc {
-    margin-top: 5px;
-    color: #888888;
-    text-align: left;
-    font-size: 14px;
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
 }
 
-
-/*  widget */
-
-.page.home{
-    @pageHomePadding: 20px;
-    .page__intro-icon{
-        margin-top: -.2em;
-        margin-left: 5px;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-    }
-    .page__title{
-        font-size: 0;
-        margin-bottom: 15px;
-    }
-    .page__bd{
-        img{
-            width: 30px;
-            height: 30px;
-        }
-        li{
-            margin: 10px 0;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            border-radius: 2px;
-            cursor: pointer;
-            &.js_show{
-                .weui-flex{
-                    opacity: .4;
-                }
-                .page__category{
-                    height: auto;
-                }
-                .page__category-content{
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-            &:first-child{
-                margin-top: 0;
-            }
-        }
-    }
-    .page__category{
-        height: 0;
-        overflow: hidden;
-    }
-    .page__category-content{
-        opacity: 0;
-        transform: translateY(-50%);
-        transition: .3s;
-    }
-    .weui-flex{
-        padding: @pageHomePadding;
-        align-items: center;
-        transition: .3s;
-        //&:active{
-        //    background-color: #ECECEC;
-        //}
-    }
-    .weui-cells{
-        margin-top: 0;
-        &:before, &:after{
-            display: none;
-        }
-    }
-    .weui-cell{
-        padding-left: @pageHomePadding;
-        padding-right: @pageHomePadding;
-        &:before{
-            left: @pageHomePadding;
-            right: @pageHomePadding;
-        }
-    }
+.row:after {
+    clear: both;
 }
 
-.page.button {
-    .page__bd {
-        padding: 0 15px;
-    }
-    .button-sp-area {
-        margin: 0 auto;
-        padding: 15px 0;
-        width: 60%;
-    }
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
 }
 
-.page.cell {
-    .page__bd {
-        padding-bottom: 30px;
-    }
+.row:after {
+    clear: both;
 }
 
-.page.form {
-    .page__bd {
-        padding-bottom: 30px;
-    }
+.col-1,
+.col-10,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-more-1,
+.col-more-10,
+.col-more-11,
+.col-more-12,
+.col-more-2,
+.col-more-3,
+.col-more-4,
+.col-more-5,
+.col-more-6,
+.col-more-7,
+.col-more-8,
+.col-more-9 {
+    position: relative;
+    min-height: 1px;
 }
 
-.page.actionsheet{
-    background-color: #FFFFFF;
+.col-1 {
+    float: left;
+    width: 10%;
+    height: 100%;
 }
 
-.page.dialog {
-    background-color: #FFFFFF;
-    .page__bd {
-        padding: 0 15px;
-    }
+.col-2 {
+    float: left;
+    width: 20%;
+    height: 100%;
 }
 
-.page.msg,
-.page.msg_success,
-.page.msg_warn {
-    background-color: #FFFFFF;
+.col-3 {
+    float: left;
+    width: 30%;
+    height: 100%;
 }
 
-.page.toast{
-    background-color: #FFFFFF;
+.col-4 {
+    float: left;
+    width: 40%;
+    height: 100%;
 }
 
-.page.panel {
-    .page__bd{
-        padding-bottom:20px;
-    }
+.col-5 {
+    float: left;
+    width: 50%;
+    height: 100%;
 }
 
-.page.article {
-    background-color: #FFFFFF;
+.col-6 {
+    float: left;
+    width: 60%;
+    height: 100%;
 }
 
-.page.icons {
-    text-align: center;
-    .page__bd {
-        padding: 0 40px;
-        text-align: left;
-    }
-    .icon-box{
-        margin-bottom: 25px;
-        display: flex;
-        align-items: center;
-        i{
-            margin-right: 18px;
-        }
-    }
-    .icon-box__ctn{
-        flex-shrink: 100;
-    }
-    .icon-box__title{
-        font-weight: normal;
-    }
-    .icon-box__desc{
-        margin-top: 6px;
-        font-size: 12px;
-        color: #888888;
-    }
-    .icon_sp_area {
-        margin-top: 10px;
-        text-align: left;
-        i:before{
-            margin-bottom: 5px;
-        }
-    }
+.col-7 {
+    float: left;
+    width: 70%;
+    height: 100%;
 }
 
-.page.flex {
-    .placeholder {
-        margin: 5px;
-        padding: 0 10px;
-        background-color: #EBEBEB;
-        height: 2.3em;
-        line-height: 2.3em;
-        text-align: center;
-        color: #CFCFCF;
-    }
+.col-8 {
+    float: left;
+    width: 80%;
+    height: 100%;
 }
 
-.page.loadmore{
-    background-color: #FFFFFF;
+.col-9 {
+    float: left;
+    width: 90%;
+    height: 100%;
 }
 
-.page.layers{
-    @layerBaseTransform: translateX(15px) rotateX(45deg) rotateZ(10deg) skew(-15deg);
-    @layerStartPos: 120px;
-    @layerSpacing: 80px;
-    @layerSmallStartPos: 140px;
-    @layerSmallSpacing: 60px;
-
-    overflow-x: hidden;
-    perspective: 1000px;
-    .page__hd{
-        @media only screen and (max-width: 320px) {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-    .page__bd{
-        position: relative;
-    }
-    .page__desc{
-        min-height: 1.6 * 3em;
-    }
-    .layers__layer{
-        position: absolute;
-        left: 50%;
-        width: 150px;
-        height: 266px;
-        margin-left: -75px;
-        box-sizing: border-box;
-        transition: .5s;
-        background: url(images/layers/transparent.gif) no-repeat center center;
-        background-size: contain;
-        font-size: 14px;
-        color: #FFFFFF;
-        span{
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            transition: .5s;
-        }
-        &:last-child{
-            span{
-                color: #AAAAAA;
-            }
-        }
-        &.j_hide{
-            opacity: 0;
-        }
-        &.j_pic{
-            span{
-                color: transparent;
-            }
-        }
-        @media only screen and (min-width: 375px) and (min-height: 603px) {
-            width: 180px;
-            height: 320px;
-            margin-left: -90px;
-        }
-        @media only screen and (min-width: 414px) and (min-height: 640px) {
-            width: 200px;
-            height: 355px;
-            margin-left: -100px;
-        }
-    }
-    .layers__layer_popout{
-        border: 1px solid rgba(203, 203, 203, .5);
-        z-index: 4;
-        &.j_transform{
-            transform: @layerBaseTransform translateZ(@layerStartPos);
-            @media only screen and (max-width: 320px) {
-                transform: @layerBaseTransform translateZ(@layerSmallStartPos);
-            }
-        }
-        &.j_pic{
-            border-color: transparent;
-            background-image: url(images/layers/popout.png);
-        }
-    }
-    .layers__layer_mask {
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 3;
-        &.j_transform{
-            transform: @layerBaseTransform translateZ(@layerStartPos - @layerSpacing);
-            @media only screen and (max-width: 320px) {
-                transform: @layerBaseTransform translateZ(@layerSmallStartPos - @layerSmallSpacing);
-            }
-        }
-    }
-    .layers__layer_navigation {
-        background-color: rgba(40, 187, 102, 0.5);
-        z-index: 2;
-        &.j_transform{
-            transform: @layerBaseTransform translateZ(@layerStartPos - 2 * @layerSpacing);
-            @media only screen and (max-width: 320px) {
-                transform: @layerBaseTransform translateZ(@layerSmallStartPos - 2 * @layerSmallSpacing);
-            }
-        }
-        &.j_pic{
-            background-color: transparent;
-            background-image: url(images/layers/navigation.png);
-        }
-    }
-    .layers__layer_content{
-        background-color: #FFFFFF;
-        z-index: 1;
-        &.j_transform{
-            transform: @layerBaseTransform translateZ(@layerStartPos - 3 * @layerSpacing);
-            @media only screen and (max-width: 320px) {
-                transform: @layerBaseTransform translateZ(@layerSmallStartPos - 3 * @layerSmallSpacing);
-            }
-        }
-        &.j_pic{
-            background-image: url(images/layers/content.png);
-        }
-    }
+.col-10 {
+    float: left;
+    width: 100%;
+    height: 100%;
 }
 
-.page.searchbar{
-    .searchbar-result {
-        display: none;
-        margin-top: 0;
-        font-size: 14px;
-        .weui-cell__bd{
-            padding:2px 0 2px 20px;
-            color:#666;
-        }
-    }
+.col-more-1 {
+    float: left;
+    width: 8.3%;
+    height: 100%;
 }
 
-.page.actionsheet{
-    overflow: hidden;
+.col-more-2 {
+    float: left;
+    width: 16.6%;
+    height: 100%;
 }
 
-.page.picker{
-    background-color: #FFFFFF;
-    overflow: hidden;
+.col-more-3 {
+    float: left;
+    width: 24.9%;
+    height: 100%;
 }
 
-.page.gallery{
-    overflow: hidden;
+.col-more-4 {
+    float: left;
+    width: 33.2%;
+    height: 100%;
 }
 
-
-/* animation */
-
-@keyframes slideIn {
-    from {
-        transform: translate3d(100%, 0, 0);
-        opacity: 0;
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
+.col-more-5 {
+    float: left;
+    width: 41.5%;
+    height: 100%;
 }
 
-@keyframes slideOut {
-    from {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
-    to {
-        transform: translate3d(100%, 0, 0);
-        opacity: 0;
-    }
+.col-more-6 {
+    float: left;
+    width: 49.8%;
+    height: 100%;
 }
 
-.page.slideIn {
-    animation: slideIn .2s forwards;
+.col-more-7 {
+    float: left;
+    width: 58.1%;
+    height: 100%;
 }
 
-.page.slideOut {
-    animation: slideOut .2s forwards;
+.col-more-8 {
+    float: left;
+    width: 66.4%;
+    height: 100%;
+}
+
+.col-more-9 {
+    float: left;
+    width: 74.7%;
+    height: 100%;
+}
+
+.col-more-10 {
+    float: left;
+    width: 83%;
+    height: 100%;
+}
+
+.col-more-11 {
+    float: left;
+    width: 91.3%;
+    height: 100%;
+}
+
+.col-more-12 {
+    float: left;
+    width: 100%;
+    height: 100%;
 }

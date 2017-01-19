@@ -1,0 +1,36 @@
+.loadme-bounced {
+    width: 70px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: 0 0 0 -35px;
+}
+
+.loadme-bounced > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    animation: loadme-bouncedelay-animate 1.4s infinite ease-in-out both;
+}
+
+.loadme-bounced .loadme-bounced1 {
+    animation-delay: -0.32s;
+}
+
+.loadme-bounced .loadme-bounced2 {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadme-bouncedelay-animate {
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}

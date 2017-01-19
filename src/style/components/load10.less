@@ -1,0 +1,72 @@
+.loadme-folding-cube {
+    width: 40px;
+    height: 40px;
+    transform: rotateZ(45deg);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    z-index: 100;
+}
+
+.loadme-folding-cube .loadme-foldingcube-child {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+}
+
+.loadme-folding-cube .loadme-foldingcube-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: loadme-foldCubeAngle-animate 2.4s infinite linear both;
+    transform-origin: 100% 100%;
+}
+
+.loadme-folding-cube .loadme-foldingcube-child2 {
+    transform: scale(1.1) rotateZ(90deg);
+}
+
+.loadme-folding-cube .loadme-foldingcube-child3 {
+    transform: scale(1.1) rotateZ(180deg);
+}
+
+.loadme-folding-cube .loadme-foldingcube-child4 {
+    transform: scale(1.1) rotateZ(270deg);
+}
+
+.loadme-folding-cube .loadme-foldingcube-child2:before {
+    animation-delay: 0.3s;
+}
+
+.loadme-folding-cube .loadme-foldingcube-child3:before {
+    animation-delay: 0.6s;
+}
+
+.loadme-folding-cube .loadme-foldingcube-child4:before {
+    animation-delay: 0.9s;
+}
+
+@keyframes loadme-foldCubeAngle-animate {
+    0%,
+    10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
