@@ -6,7 +6,8 @@
     left: 50%;
     top: 50%;
     margin: -20px 0 0 -20px;
-    animation: sk-rotate 2.0s infinite linear;
+    animation: loadme-dot-rotate 2.0s infinite linear;
+    z-index: 100;
 }
 
 .loadme-dot1,
@@ -16,9 +17,9 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    background-color: #333;
+    background-color: @load-color;
     border-radius: 100%;
-    animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: loadme-dot-bounce 2.0s infinite ease-in-out;
 }
 
 .loadme-dot2 {
@@ -27,13 +28,13 @@
     animation-delay: -1.0s;
 }
 
-@keyframes sk-rotate {
+@keyframes loadme-dot-rotate {
     100% {
         transform: rotate(360deg);
     }
 }
 
-@keyframes sk-bounce {
+@keyframes loadme-dot-bounce {
     0%,
     100% {
         transform: scale(0.0);

@@ -1,0 +1,103 @@
+.loadme-fadingCircle {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    z-index: 100;
+    .loadme-fadingCircle-child {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .loadme-fadingCircle-child:before {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 15%;
+        height: 15%;
+        background-color: @load-color;
+        border-radius: 100%;
+        animation: loadme-fadingCircle 1.2s infinite ease-in-out both;
+    }
+    .loadme-fadingCircle-child2 {
+        transform: rotate(30deg);
+    }
+    .loadme-fadingCircle-child3 {
+        transform: rotate(60deg);
+    }
+    .loadme-fadingCircle-child4 {
+        transform: rotate(90deg);
+    }
+    .loadme-fadingCircle-child5 {
+        transform: rotate(120deg);
+    }
+    .loadme-fadingCircle-child6 {
+        transform: rotate(150deg);
+    }
+    .loadme-fadingCircle-child7 {
+        transform: rotate(180deg);
+    }
+    .loadme-fadingCircle-child8 {
+        transform: rotate(210deg);
+    }
+    .loadme-fadingCircle-child9 {
+        transform: rotate(240deg);
+    }
+    .loadme-fadingCircle-child10 {
+        transform: rotate(270deg);
+    }
+    .loadme-fadingCircle-child11 {
+        transform: rotate(300deg);
+    }
+    .loadme-fadingCircle-child12 {
+        transform: rotate(330deg);
+    }
+    .loadme-fadingCircle-child2:before {
+        animation-delay: -1.1s;
+    }
+    .loadme-fadingCircle-child3:before {
+        animation-delay: -1s;
+    }
+    .loadme-fadingCircle-child4:before {
+        animation-delay: -0.9s;
+    }
+    .loadme-fadingCircle-child5:before {
+        animation-delay: -0.8s;
+    }
+    .loadme-fadingCircle-child6:before {
+        animation-delay: -0.7s;
+    }
+    .loadme-fadingCircle-child7:before {
+        animation-delay: -0.6s;
+    }
+    .loadme-fadingCircle-child8:before {
+        animation-delay: -0.5s;
+    }
+    .loadme-fadingCircle-child9:before {
+        animation-delay: -0.4s;
+    }
+    .loadme-fadingCircle-child10:before {
+        animation-delay: -0.3s;
+    }
+    .loadme-fadingCircle-child11:before {
+        animation-delay: -0.2s;
+    }
+    .loadme-fadingCircle-child12:before {
+        animation-delay: -0.1s;
+    }
+}
+
+@keyframes loadme-fadingCircle {
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}

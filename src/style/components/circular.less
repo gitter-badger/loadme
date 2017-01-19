@@ -1,41 +1,29 @@
-.circular-wrap{
-    background-color: #E1E1E1;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    z-index: 100;
-    left: 50%;
-    top: 50%;
-    margin: -50px 0 0 -50px;
-    opacity: .80;
-    border-radius: 10px
-}
-
-.circular, .circular:after {
+.loadme-circular,
+.loadme-circular:after {
     border-radius: 50%;
     width: 10em;
     height: 10em;
 }
 
-.circular {
-    width: 50px;
-    height: 50px;
+.loadme-circular {
+    width: 40px;
+    height: 40px;
     position: fixed;
     left: 50%;
     top: 50%;
-    margin: -25px 0 0 -25px;
+    margin: -20px 0 0 -20px;
     z-index: 100;
     font-size: 10px;
     text-indent: -9999em;
     border-top: 1px solid rgba(237, 237, 237, 0.8);
     border-right: 1px solid rgba(237, 237, 237, 0.8);
     border-bottom: 1px solid rgba(237, 237, 237, 0.8);
-    border-left: 1px solid #5A5A5A;
+    border-left: 1px solid @load-color;
     transform: translateZ(0);
-    animation: circular-animate 1.1s infinite linear;
+    animation: loadme-circular-animate 1.1s infinite linear;
 }
 
-@keyframes circular-animate {
+@keyframes loadme-circular-animate {
     0% {
         transform: rotate(0deg);
     }

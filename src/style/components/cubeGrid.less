@@ -1,0 +1,54 @@
+.loadme-cube-grid {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+    z-index: 100;
+    .loadme-cubeGrid {
+        width: 33%;
+        height: 33%;
+        background-color: @load-color;
+        float: left;
+        animation: loadme-cubeGrid-animate 1.3s infinite ease-in-out;
+    }
+    .loadme-cubeGrid1 {
+        animation-delay: 0.2s;
+    }
+    .loadme-cubeGrid2 {
+        animation-delay: 0.3s;
+    }
+    .loadme-cubeGrid3 {
+        animation-delay: 0.4s;
+    }
+    .loadme-cubeGrid4 {
+        animation-delay: 0.1s;
+    }
+    .loadme-cubeGrid5 {
+        animation-delay: 0.2s;
+    }
+    .loadme-cubeGrid6 {
+        animation-delay: 0.3s;
+    }
+    .loadme-cubeGrid7 {
+        animation-delay: 0s;
+    }
+    .loadme-cubeGrid8 {
+        animation-delay: 0.1s;
+    }
+    .loadme-cubeGrid9 {
+        animation-delay: 0.2s;
+    }
+}
+
+@keyframes loadme-cubeGrid-animate {
+    0%,
+    70%,
+    100% {
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        transform: scale3D(0, 0, 1);
+    }
+}

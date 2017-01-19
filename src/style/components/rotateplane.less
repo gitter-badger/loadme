@@ -1,15 +1,16 @@
 .loadme-rotateplane {
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: @load-color;
     position: fixed;
     left: 50%;
     top: 50%;
     margin: -20px 0 0 -20px;
-    animation: rotateplane-animate 1.2s infinite ease-in-out;
+    animation: loadme-rotateplane-animate 1.2s infinite ease-in-out;
+    z-index: 100;
 }
 
-@keyframes rotateplane-animate {
+@keyframes loadme-rotateplane-animate {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }

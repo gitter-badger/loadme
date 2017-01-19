@@ -7,16 +7,20 @@
     <title>circular</title>
     <link rel="stylesheet" type="text/css" href="../../../dist/style/loadme.css">
     <style>
-    .loader-mask {
-        background-color: green;
+    .loadme-mask {
+        display: none;
     }
     </style>
 </head>
 
 <body>
     <div>
-        <div class="loadme-scaleout"></div>
-        <div class="loader-mask"></div>
+        <div class="loadme-bounced">
+            <div class="loadme-bounced-child loadme-bounced1"></div>
+            <div class="loadme-bounced-child loadme-bounced2"></div>
+            <div class="loadme-bounced-child loadme-bounced3"></div>
+        </div>
+        <div class="loadme-mask"></div>
     </div>
 </body>
 

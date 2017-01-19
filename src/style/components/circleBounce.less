@@ -1,31 +1,32 @@
-.loadme-bounce {
+.loadme-circleBounce {
     width: 40px;
     height: 40px;
     position: fixed;
     left: 50%;
     top: 50%;
     margin: -20px 0 0 -20px;
+    z-index: 100;
 }
 
-.loadme-bounce1,
-.loadme-bounce2 {
+.loadme-circleBounce1,
+.loadme-circleBounce2 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #333;
+    background-color: @load-color;
     opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
-    animation: bounce-animate 2.0s infinite ease-in-out;
+    animation: loadme-circleBounce-animate 2.0s infinite ease-in-out;
 }
 
-.loadme-bounce2 {
+.loadme-circleBounce2 {
     -webkit-animation-delay: -1.0s;
     animation-delay: -1.0s;
 }
 
-@keyframes bounce-animate {
+@keyframes loadme-circleBounce-animate {
     0%,
     100% {
         transform: scale(0.0);

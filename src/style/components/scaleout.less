@@ -1,13 +1,14 @@
 .loadme-scaleout {
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: @load-color;
     position: fixed;
     left: 50%;
     top: 50%;
     margin: -20px 0 0 -20px;
     border-radius: 100%;
     animation: loadme-scaleout-animate 1.0s infinite ease-in-out;
+    z-index: 100;
 }
 
 @keyframes loadme-scaleout-animate {
