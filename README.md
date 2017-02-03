@@ -18,7 +18,7 @@ loadme非常简单，因为它仅仅是个CSS3样式库。加载loadme.css后，
 <div class="loadme-circular"></div>
 <div class="loadme-mask"></div>
 ```
-![circular](http://ohwq8bodu.bkt.clouddn.com/git/circular.gif)
+![circular](http://ohwq8bodu.bkt.clouddn.com/git/cir.gif)
 
 #### rotateplane loading
 ```html
