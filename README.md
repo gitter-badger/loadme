@@ -1,6 +1,8 @@
 loadme💫 最全的适用于移动端的loading库
 ====
 
+[![Join the chat at https://gitter.im/loadme/Lobby](https://badges.gitter.im/loadme/Lobby.svg)](https://gitter.im/loadme/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://api.travis-ci.org/zx1988826/tin-flex.svg?branch=master)](https://travis-ci.org/zx1988826/tin-flex)
 [![npm version](https://img.shields.io/badge/npm-v1.0.0-blue.svg)](https://www.npmjs.com/package/tin-flex)
 [![Gitter](https://badges.gitter.im/weui/weui.svg)](https://gitter.im/tin-flex)
